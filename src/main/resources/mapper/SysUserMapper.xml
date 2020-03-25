@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd">
-<mapper namespace="com.thyme.system.dao.UserDao">
-   <select id="selectAll" resultType="com.thyme.system.entity.SysUser">
+<mapper namespace="com.myth.system.dao.SysUserDao">
+   <select id="selectAll" resultType="com.myth.system.entity.SysUser">
        select * from sys_user
    </select>
 </mapper>

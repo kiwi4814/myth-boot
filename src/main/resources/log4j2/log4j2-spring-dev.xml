@@ -62,7 +62,7 @@
         </logger>
         <logger name="com.baomidou" level="INFO">
         </logger>
-        <logger name="com.thyme.system.dao" level="debug" additivity="false">
+        <logger name="com.myth.system.dao" level="debug" additivity="false">
             <appender-ref ref="CONSOLE"/>
         </logger>
         <root level="ALL">
