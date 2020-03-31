@@ -11,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @MapperScan("com.myth.*.dao")
+@MapperScan("com.myth.*.mapper")
 public class MythBootApplication {
 
     public static void main(String[] args) {
