@@ -2,7 +2,7 @@ package com.myth.equipment.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.myth.equipment.entity.Equipment;
-import com.myth.equipment.entity.ResultEqui;
+import com.myth.equipment.entity.RoleEqui;
 
 import java.util.List;
 
@@ -12,8 +12,8 @@ import java.util.List;
  * </p>
  *
  * @author corningrey
- * @since 2020-03-27
+ * @since 2020-04-07
  */
-public interface IEquipmentService extends IService<Equipment> {
-    List<ResultEqui> permutateAll();
+public interface IRoleEquiService extends IService<RoleEqui> {
+    List<Equipment> selectEquiListByRoleId(Integer roleId);
 }

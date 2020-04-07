@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.myth.equipment.mapper.RoleEquiMapper">
+    <select id="selectEquiListByRoleId" parameterType="java.lang.Integer"
+            resultType="com.myth.equipment.entity.Equipment">
+		SELECT
+			e2.id as id,
+			NAME as name,
+			series as series,
+			shuqiang as shuqiang,
+			sangong_rate as sangongRate,
+			baizi_rate as baiziRate,
+			huangzi_rate as huangziRate,
+			zhongshang_rate as zhongshangRate,
+			baoshang_rate as baoshangRate,
+			lizhi_rate as lizhiRate,
+			skill_rate as skillRate,
+			location as location,
+			shenhua as shenhua
+		FROM
+			role_equi e1,
+			equipment e2
+		WHERE
+			e1.equi_id = e2.id
+			AND e1.role_id = #{roleId}
+    </select>
+</mapper>
